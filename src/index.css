@@ -26,3 +26,13 @@ canvas {
   display: grid;
   /* background: #baaed3; */
 }
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centre {
+  padding: 20px;
+}

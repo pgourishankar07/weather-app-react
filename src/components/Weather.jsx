@@ -7,6 +7,7 @@ import humidityIcon from "../assets/humidity.png";
 import rainIcon from "../assets/rain.png";
 import snowIcon from "../assets/snow.png";
 import windIcon from "../assets/wind.png";
+import Lordicon from "./LordIcon";
 import { useEffect, useRef, useState } from "react";
 
 const Weather = () => {
@@ -66,11 +67,14 @@ const Weather = () => {
     <div className="weather">
       <div className="search-bar">
         <input ref={inputRef} type="text" placeholder="Search" />
-        <img
+        {/* <img
           src={searchIcon}
           alt=""
           onClick={() => search(inputRef.current.value)}
-        />
+        /> */}
+        <button onClick={() => search(inputRef.current.value)}>
+          <Lordicon />
+        </button>
       </div>
       <img src={weatherData.icon} alt="" className="weather-icon" />
       <p className="temperature">{weatherData.temperature}</p>

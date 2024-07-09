@@ -25,9 +25,9 @@
   font-size: 18px;
 }
 
-.search-bar img {
+.search-bar button {
   width: 50ox;
-  padding: 15px;
+  padding: 5px;
   border-radius: 50%;
   background: #ebfffc;
   cursor: pointer;
